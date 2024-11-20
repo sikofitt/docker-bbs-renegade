@@ -6,8 +6,9 @@ set -x
 # Download
 cd /tmp/setup
 # renegadebbs.info wend down in July 2017.  Use the archive.org copy.
-# wget http://renegadebbs.info/files/unofficial.rgbbsfullv120a.zip
-wget 'https://web.archive.org/web/20160324195446/http://renegadebbs.info/files/unofficial.rgbbsfullv120a.zip'
+# Filename changed on renegadebbs.info.  archive.org copy no longer works because the renegadebbs.info owner added a robots.txt to prevent it.
+# wget http://renegadebbs.info/files/2014%20unofficial.rgbbsfullv120a.zip
+wget 'https://renegadebbs.info/files/2014%20unofficial.rgbbsfullv120a.zip' -O unofficial.rgbbsfullv120a.zip
 
 sha256sum -c < sums
 
